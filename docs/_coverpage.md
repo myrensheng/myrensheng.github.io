@@ -1,8 +1,8 @@
-# docsify <small>3.5</small>
-> 一个神奇的文档网站生成器。
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+# 帅帅的python<small>1.0</small>
+> 分享python知识
+- 以项目案例为主
+- 基础知识以实战常用为主
+- 包括：爬虫，后端，数据分析，机器学习等
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docs)
+[GitHub](https://github.com/myrensheng/myrensheng.github.io)
+[Get Started](#/)
