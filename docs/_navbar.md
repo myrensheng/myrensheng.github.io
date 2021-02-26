@@ -1,6 +1,4 @@
-* [En](/)
 * [:cn:中文](/zh-cn/)
-* [:us: :uk:](/zh-cn/)
 * 入门
   * [快速开始](zh-cn/quickstart.md)
   * [多页文档](zh-cn/more-pages.md)

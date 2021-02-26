@@ -5,4 +5,4 @@
 - 包括：爬虫，后端，数据分析，机器学习等
 
 [GitHub](https://github.com/myrensheng/myrensheng.github.io)
-[Get Started](#/)
+[Get Started](/)
