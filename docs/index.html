@@ -48,6 +48,31 @@
           '/': '复制'
         }
       },
+      formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
+      plugins: [
+      // 每篇文章开头加上更新时间
+      function(hook) {
+          hook.beforeEach(function(html) {
+            return (
+              '📝最近修改时间：{docsify-updated}\n'+html
+            );
+          });
+        },
+      // 每篇文档加上footer
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span>作者：<a href="https://github.com/myrensheng" target="_blank">ZS</a>.</span></br>',
+            '<span>文档开源地址：<a href="https://github.com/myrensheng/myrensheng.github.io" target="_blank">帅帅的Python</a>.</span>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ],
     }
   </script>
   <!-- 支持离线使用 -->
@@ -67,7 +92,7 @@
   <!-- 复制到剪切板上 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <!-- 上一篇，下一篇导航 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
   <!-- docsify-themeable (latest v0.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 
