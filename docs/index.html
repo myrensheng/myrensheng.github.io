@@ -4,20 +4,72 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css"> -->
+  <!-- Theme: Simple (latest v0.x.x) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <!-- Theme: Simple Dark -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
+
+
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
-	  coverpage: true,
-	  name: '<span>帅帅的Python</span>',
+      // 文档内容搜索
+      search: {paths: 'auto', placeholder: '搜索'},
+      // 封面页
+  	  coverpage: true,
+      // 左侧导航栏顶部文字
+  	  name: '<span>帅帅的Python</span>',
+      // 加载左边导航栏
       loadSidebar: true,
-	  subMaxLevel: 2,
-	  loadNavbar: true,
-	  repo: 'https://github.com/myrensheng/myrensheng.github.io',
+      // 左边导航栏最大级别目录
+  	  subMaxLevel: 2,
+      // 加载顶部导航栏
+  	  loadNavbar: true,
+  	  repo: 'https://github.com/myrensheng/myrensheng.github.io',
+      // 文档的字数统计
+      count:{
+          countable:true,
+          fontsize:'0.9em',
+          color:'rgb(90,90,90)',
+          language:'chinese'
+        },
+      // 点击复制代码到剪切板上
+      copyCode: {
+        buttonText: {
+          '/': '点击复制'
+        },
+        errorText: {
+          '/': '错误'
+        },
+        successText: {
+          '/': '复制'
+        }
+      },
+    }
+  </script>
+  <!-- 支持离线使用 -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- python代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <!-- sql代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+  <!-- 复制到剪切板上 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!-- 上一篇，下一篇导航 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- docsify-themeable (latest v0.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
 </body>
 </html>
