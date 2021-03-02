@@ -1,13 +1,8 @@
-* [首页](about/ "首页")
+* [简介](about/ "简介")
 * 项目
-  * 姓名大全
-    * [姓名大全爬虫](project/random_name/spider "姓名大全爬虫")
-    * [数据库搭建](project/random_name/database "数据库搭建")
-* 基础知识
-  * python3
-    * [安装](base_knowledge/python/install_python "python安装")
-  * 爬虫
-  * 后端
-  * 数据分析
-  * 机器学习
-* [友情链接](about/friends "友情链接")
+  * [随机生成姓名](project/random_name "随机生成姓名")
+* Python世界
+  * [第一篇：梦](python_world/第一篇：梦 "第一篇：梦")
+* [其他]
+  * 请作者喝杯饮料
+  * [友情链接](about/friends "友情链接")
