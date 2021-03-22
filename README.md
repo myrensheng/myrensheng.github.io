@@ -10,5 +10,9 @@
 
 [第一篇：梦](https://myrensheng.github.io/#/python_world/第一篇：梦)
 
+## 本地运行：
 
+```shell
+python -m http.server 3000
+```
 
