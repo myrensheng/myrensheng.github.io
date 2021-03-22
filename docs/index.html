@@ -57,8 +57,7 @@
       function(hook) {
           hook.beforeEach(function(html) {
             return (
-			'<img src="./_media/帅帅的python.png"  alt="帅帅的python" /></br>'+
-              '📝最近修改时间：{docsify-updated}\n'+html
+			'<img src="_media/帅帅的python.png" data-origin="_media/帅帅的python.png" alt="帅帅的python"></br>📝最近修改时间：{docsify-updated}\n'+html
             );
           });
         },
